@@ -11,11 +11,14 @@
 
 (function () {
     'use strict';
+    // the search button, click the button will show searchbox.
     var a = document.evaluate("/html/body/div[1]/div/header/div/div[3]",
         document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    // the searchbox.
     var b = document.evaluate(
         '//*[@id="s-term"]',
         document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    // the visuable area after click search button (a).
     var c = document.evaluate(
         '/html/body/div[1]/div/header/div/div[4]',
         document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
